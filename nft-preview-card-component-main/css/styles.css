@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Outfit-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/outfit/static/Outfit-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.nft-card {
+  width: 17rem;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+#heading {
+  color: white;
+  font-family: 'Outfit-Semibold';
+}
+
+.nft-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nft-content p, .nft-profile p {
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit-Light';
+  font-weight: 300;
+  font-size: .85em;
+}
+
+.price-duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-family: 'Outfit-SemiBold';
+  text-transform: uppercase;
+}
+
+.duration span {
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit-Regular';
+}
+
+.line {
+  border: none;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.nft-profile {
+  display: flex;
+  gap: 10px;
+}
+
+.nft-profile img {
+  width: 27px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.nft-profile span {
+  color: white;
+}
