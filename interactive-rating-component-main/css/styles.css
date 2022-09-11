@@ -1,0 +1,152 @@
+/* overpass-regular - latin */
+@font-face {
+  font-family: 'Overpass-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/overpass-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/overpass-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* overpass-700 - latin */
+@font-face {
+  font-family: 'Overpass-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/overpass-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/overpass-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card, .thank-you-card {
+  background-color: hsl(213, 19%, 13%);
+  max-width: 375px;
+  padding: 30px;
+  border-radius: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.icon {
+  border-radius: 50%;
+  background-color: hsla(217, 12%, 63%, .1);
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  font-family: 'Overpass-Regular';
+  color: hsla(0, 0%, 100%, .5);
+  font-size: 14px;
+}
+
+.card h1 {
+  padding-top: 32px;
+  color: white;
+  font-family: 'Overpass-Bold', sans-serif;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 21px;
+  font-family: 'Overpass-Regular', sans-serif;
+  color: hsla(0, 0%, 100%, .5);
+  padding: 15px 0;
+}
+
+.rates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate {
+  border-radius: 50%;
+  background-color: hsla(217, 12%, 63%, .1);
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  font-family: 'Overpass-Regular';
+  color: hsla(0, 0%, 100%, .5);
+  font-size: 14px;
+  transition: background-color .2s ease;
+}
+.submit {
+  margin-top: 21px;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Overpass-Regular';
+  letter-spacing: 2px;
+  transition: background-color .2s ease;
+}
+
+.rate:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.active, :hover.active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.thank-you-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+.rate-amount {
+  background-color: hsl(216, 19%, 18%);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: hsl(25, 97%, 53%);
+  font-family: 'Overpass-Regular';
+  margin: 1rem 0;
+}
+
+.thank-you-card h1 {
+  color: white;
+  font-family: 'Overpass-Bold';
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.appreciate {
+  color: hsla(0, 0%, 100%, .5);
+  font-family: 'Overpass-Regular';
+  font-size: .8rem;
+  line-height: 1.4rem;
+}
+
+.none {
+  display: none;
+}
