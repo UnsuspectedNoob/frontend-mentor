@@ -1,0 +1,66 @@
+/* outfit-regular - latin */
+@font-face {
+  font-family: 'Outfit-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/outfit-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/outfit-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* outfit-700 - latin */
+@font-face {
+  font-family: 'Outfit-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/outfit-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/outfit-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 0 5%;
+}
+
+.card {
+  max-width: 320px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.text-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.text-content h3 {
+  font-family: 'Outfit-Bold';
+  margin-top: .5rem;
+  font-size: 1.3rem;
+}
+
+.text-content p {
+  margin: 15px 0;
+  font-family: 'Outfit-Regular';
+  color: hsl(220, 15%, 55%);
+}

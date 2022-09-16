@@ -1,0 +1,119 @@
+/* big-shoulders-display-700 - latin */
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/big-shoulders-display-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/big-shoulders-display-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 920px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 3rem;
+}
+
+.card h1 {
+  padding: 35px 0;
+  font-family: 'Big Shoulders Display';
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+.card p {
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans a {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs a {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+.learn-more {
+  margin-top: 85px;
+  padding: 18px 32px;
+  border-radius: 25px;
+  border: none;
+  font-family: 'Lexend Deca';
+  transition: background-color .2s ease;
+}
+
+.learn-more a {
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  background-color: transparent;
+  outline: 2px solid white;
+  cursor: pointer;
+}
+
+.learn-more:hover a {
+  color: white;
+}
+
+@media screen and (max-width: 920px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5%;
+  }
+
+  .card {
+    max-width: 365px;
+  }
+
+  .learn-more {
+    margin-top: 20px;
+  }
+}
